@@ -107,7 +107,7 @@
         <!-- Навигационное меню с бургером -->
         <nav class="navbar navbar-expand-lg navbar-light bg-f7eabd" id="none-display">
             <!-- Кнопка бургера -->
-            <img src="../img/header/logo.jpg" alt="Логотип" class="logo-burger">
+            <img src="../img/header/logo.jpg" alt="Логотип" class="logo-burger" style="width: 7rem; padding: 1%; margin-left: 4%;">
             <div class="btn-order">
                 <div class="button-container">
                     <button class="hover-button" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</button>
@@ -130,10 +130,10 @@
                             Меню
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#novinki">Новинки</a>
-                            <a class="dropdown-item" href="#drinks">Напитки</a>
-                            <a class="dropdown-item" href="#bistro">Бистро/Пекарня</a>
-                            <a class="dropdown-item" href="#presents">Подарочные наборы</a>
+                            <a class="dropdown-item" href="menu.html#novinki">Новинки</a>
+                            <a class="dropdown-item" href="menu.html#drinks1">Напитки</a>
+                            <a class="dropdown-item" href="menu.html#bistro1">Бистро/Пекарня</a>
+                            <a class="dropdown-item" href="menu.html#presents1">Подарочные наборы</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -775,11 +775,12 @@
 
             </div>
 
-            <div class="menu-contaner secret" id="drinks">
+            <div class="menu-contaner secret" id="drinks1">
                 <h2>Напитки</h2>
-                <div class="container my-5">
+                <div class="container my-5" id="drinks1">
                     <!-- Карусель для напитков -->
                     <div id="drinksCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <h3>Кофе</h3>
                         <div class="carousel-inner">
                             <!-- Первая карточка -->
                             <div class="carousel-item active">
@@ -817,6 +818,166 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Третья карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-3.png" class="card-img-top" alt="Товар 3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Американо</h5>
+                                                <p class="card-text">Эспрессо с добавлением горчей воды. Можем сделать
+                                                    Айс Американо.</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.3">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- четвертая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-4.png" class="card-img-top" alt="Товар 4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Капучино</h5>
+                                                <p class="card-text">1/3 эспрессо, 1/3 горячего
+                                                    молока и 1/3 молочной пены (взбитое молоко)</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.4">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- пятая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-5.png" class="card-img-top" alt="Товар 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Флет Уайт</h5>
+                                                <p class="card-text">Двойного эспрессо и горячего молока с небольшим
+                                                    количеством пены</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.5">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- шестая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-6.png" class="card-img-top" alt="Товар 6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Латте | Айс латте</h5>
+                                                <p class="card-text">Трёхслойная смесь из молочной пены, молока и кофе
+                                                    эспрессо</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.6">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- седьмая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-7.png" class="card-img-top" alt="Товар 7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Мокачино</h5>
+                                                <p class="card-text">Эспрессо с добавлением шоколада и молочной пены</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.7">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- восьмая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-8.png" class="card-img-top" alt="Товар 8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Раф</h5>
+                                                <p class="card-text">Эспрессо с добавлением ванильного и простого
+                                                    сахара, а также сливок.</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.8">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <!-- девятая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-9.png" class="card-img-top" alt="Товар 9">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Гляссе</h5>
+                                                <p class="card-text"> Холодный напиток на основе кофе с добавлением
+                                                    мороженого</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.9">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- десятая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-10.png" class="card-img-top"
+                                                alt="Товар 10">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Кофейный милкшейк</h5>
+                                                <p class="card-text">Молочный коктейль на основе молока и мороженого с
+                                                    добавление кофе</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.10">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                                                                                                                                          
                         </div>
             
                         <!-- Стрелки для переключения -->
@@ -825,6 +986,187 @@
                             <span class="visually-hidden">Предыдущий</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#drinksCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+
+                    <!-- Карусель для напитков -->
+                    <div id="teaCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <h3>Чай</h3>
+                        <div class="carousel-inner">
+                            <!-- Первая карточка -->
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.1.png" class="card-img-top"
+                                                alt="Товар 1">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Чёрный чай БЕЗ ДОБАВОК</h5>
+                                                <p class="card-text">Многообразие сборов и сортов черного чая из
+                                                    регионов</p>
+                                                <p class="card-text"><strong>Цена: зависит от чая</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.1">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Вторая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.2.png" class="card-img-top"
+                                                alt="Товар 2">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Молочный Улун</h5>
+                                                <p class="card-text">Полуферментированный чай родом из Китая.</p>
+                                                <p class="card-text"><strong>Цена: зависит от чая</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.2">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Третья карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.3.png" class="card-img-top"
+                                                alt="Товар 3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Таежный чай</h5>
+                                                <p class="card-text">Чёрный Цейлонский чай с таёжных секретов</p>
+                                                <p class="card-text"><strong>Цена: 20г. - 75 руб </strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.3">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.4.png" class="card-img-top"
+                                                alt="Товар 4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ройбуш Пряный Апельсин</h5>
+                                                <p class="card-text">Ароматный и насыщенный напиток на основе
+                                                    южноафриканского ройбуша</p>
+                                                <p class="card-text"><strong>Цена: 20г. - 120 руб.</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.4">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5 карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.5.png" class="card-img-top"
+                                                alt="Товар 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ДЛЯ САМОЙ-САМОЙ</h5>
+                                                <p class="card-text">Черный чай, тонизирующий, с вкусовыми добавками
+                                                </p>
+                                                <p class="card-text"><strong>Цена: 20гр - 110₽</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.5">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 6 карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.6.png" class="card-img-top"
+                                                alt="Товар 6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Утренний Самарканд</h5>
+                                                <p class="card-text">Зеленый китайский час с фруктовыми кусочками </p>
+                                                <p class="card-text"><strong>Цена: 20гр - 110₽</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.6">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 7 карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.7.png" class="card-img-top"
+                                                alt="Товар 7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Источник жизни</h5>
+                                                <p class="card-text">Травяной сбор с 1 000 вытаминов одной кружке</p>
+                                                <p class="card-text"><strong>Цена: 20гр - 80₽</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.7">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 8 карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.8.png" class="card-img-top"
+                                                alt="Товар 8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Хвойный лес</h5>
+                                                <p class="card-text">Здоровые легкие после одной чашечки зеленого чая
+                                                </p>
+                                                <p class="card-text"><strong>Цена: 20гр - 80₽</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.8">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                                                                                                            
+                        </div>
+            
+                        <!-- Стрелки для переключения -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#teaCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#teaCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Следующий</span>
                         </button>
@@ -961,7 +1303,7 @@
                 </div>
             </div>
 
-            <div class="menu-contaner secret" id="bistro">
+            <div class="menu-contaner secret" id="bistro1">
                 <h2>Бистро/Пекарня</h2>
                 <div class="container my-5">
                     <!-- Карусель для бистро -->
@@ -1186,7 +1528,7 @@
                 </div>
             </div>
 
-            <div class="menu-contaner secret" id="presents">
+            <div class="menu-contaner secret" id="presents1">
                 <h2>Подарочные наборы</h2>
                 <div class="container my-5">
                     <!-- Карусель для подарков -->
