@@ -1,0 +1,2190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-menu.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Кофе с СоВой - Меню</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-menu">
+            <div class="media-icon hidden">
+                <a href="https://vk.com/coffeessovoy35"><img src="../img/icon/vk.png" alt="Вконтакте"></a>
+                <a href="https://wa.me/79115128112"><img src="../img/icon/instagram.png" alt="Ватсап"></a>
+                <a href="https://www.instagram.coffeessovoy35"><img src="../img/icon/whatsapp.png" alt="Инстаграм"></a>
+            </div>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/header/logo.jpg" alt="Логотип кофейни 'Кофе с СоВой'"></a>
+            </div>
+            <div class="contact-menu hidden">
+                <div class="contact-tools">
+                    <div class="contact-tool">
+                        <img src="../img/header/location.png" alt="Город, где находится чудестная кофейня">
+                        <a>Вытегра</a>
+                    </div>
+                    <div class="contact-tool">
+                        <div class="text-to-copy" onclick="copyText(this)"><img src="../img/header/phone.png"
+                                alt="Номер телефона для связи">+7 (911) 512-81-12</div>
+                    </div>
+                </div>
+                <div class="btn-order">
+                    <div class="button-container">
+                        <button class="hover-button" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</button>
+                        <div class="owl-tooltip">🦉</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttom-menu">
+            <!-- Навигационное меню -->
+            <nav class="navbar navbar-expand-lg bg-f7eabd">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Меню
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../page/menu.html#novinki">Новинки</a>
+                                <a class="dropdown-item" href="../page/menu.html#drinks">Напитки</a>
+                                <a class="dropdown-item" href="../page/menu.html#bistro">Бистро/Пекарня</a>
+                                <a class="dropdown-item" href="../page/menu.html#presents">Подарочные наборы</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/delivery.html#deliver">Доставка</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownBooking" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Бронирование
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
+                                <a class="dropdown-item" href="../page/booking.html">Забронировать столик</a>
+                                <a class="dropdown-item" href="../page/booking.html#hall_reservation">Заказать зал</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../page/news.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/galery.html">Галерея</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                О Нас
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
+                                <a class="dropdown-item" href="../page/about-us.html">Кто мы?</a>
+                                <a class="dropdown-item" href="../page/about-us.html#contact">Контакты</a>
+                                <a class="dropdown-item" href="../page/about-us.html#impotant">Создатели</a>
+                                <a class="dropdown-item" href="../page/about-us.html#retwit">Отзывы</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Навигационное меню с бургером -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-f7eabd" id="none-display">
+            <!-- Кнопка бургера -->
+            <img src="../img/header/logo.jpg" alt="Логотип" class="logo-burger">
+            <div class="btn-order">
+                <div class="button-container">
+                    <button class="hover-button" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</button>
+                    <div class="owl-tooltip">🦉</div>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Меню -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Меню
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#novinki">Новинки</a>
+                            <a class="dropdown-item" href="#drinks">Напитки</a>
+                            <a class="dropdown-item" href="#bistro">Бистро/Пекарня</a>
+                            <a class="dropdown-item" href="#presents">Подарочные наборы</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="delivery.html#deliver">Доставка</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Бронирование
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
+                            <a class="dropdown-item" href="booking.html">Забронировать столик</a>
+                            <a class="dropdown-item" href="booking.html#hall_reservation">Заказать зал</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galery.html">Галерея</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            О Нас
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
+                            <a class="dropdown-item" href="about-us.html">Кто мы?</a>
+                            <a class="dropdown-item" href="about-us.html#contact">Контакты</a>
+                            <a class="dropdown-item" href="about-us.html#impotant">Создатели</a>
+                            <a class="dropdown-item" href="about-us.html#retwit">Отзывы</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+
+            <!-- Модальное окно входа -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <h2 class="garmond-1">Вход</h2>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="div-forms">
+                            <div class="div-form">
+                                <label for="loginUsername">Логин:</label>
+                                <input type="text" id="loginUsername" name="loginUsername" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="loginPassword">Пароль:</label>
+                                <input type="password" id="loginPassword" name="loginPassword" required>
+                            </div>
+
+                            <label>
+                                <input type="checkbox" id="rememberMe"> Запомнить меня
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-submit">Войти</button>
+                        <p class="text-custom-1" style="margin-top: 3%;">Нет аккаунта? <a href="#"
+                                data-bs-target="#registerModal" data-bs-toggle="modal">Зарегистрироваться</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Модальное окно регистрации -->
+
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"><h2 class="garmond-1">Регистрация</h2></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="div-forms">
+                            <div class="div-form">
+                                <label for="registerFullName">ФИО<span class="red">*</span>:</label>
+                                <input type="text" id="registerFullName" name="registerFullName" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerUsername">Логин<span class="red">*</span>:</label>
+                                <input type="text" id="registerUsername" name="registerUsername" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerPhone">Номер телефона<span class="red">*</span>:</label>
+                                <input type="tel" id="registerPhone" name="registerPhone" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerEmail">Почта:</label>
+                                <input type="email" id="registerEmail" name="registerEmail" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerPassword">Пароль<span class="red">*</span>:</label>
+                                <input type="password" id="registerPassword" name="registerPassword" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerConfirmPassword">Подтверждение пароля<span class="red">*</span>:</label>
+                                <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" required>
+                            </div>
+                            <label>
+                                <input type="checkbox" id="agreeToTerms" required> Согласен на обработку персональных
+                                данных<span class="red">*</span>
+                            </label>
+                        </div>
+    
+                        <button type="submit" class="btn-submit">Зарегистрироваться</button>
+                        <p class="text-custom-1" style="margin-top: 3%;">Есть аккаунт? <a href="#" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</a></p>
+                        <span><span class="red">*</span> - поля, обязательные для заполнения</span>
+                        <a href="page/cart.html">Просмотр аккаунта</a>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main id="novinki">
+        <div id="tooltip" class="tooltip">Номер скопирован!</div>
+        <div class="kroshka gallery">
+            <p><a href="../index.html">Главная</a> > <a href="#">Меню</a></p>
+        </div>
+        <div class="menu-contaner">
+            <h2>Новинки</h2>
+            <!-- для новинок -->
+            <div class="container my-5 keep_secret">
+                <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Слайды -->
+                    <div class="carousel-inner">
+                        <!-- Первый слайд (4 карточки) -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="../img/menu/novinki/card-1.png" class="card-img-top" alt="Товар 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Чайные наборы</h5>
+                                            <p class="card-text">Мини-наборы чайной коллекции в подарок</p>
+                                            <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-1.1">
+                                                Описание
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="../img/menu/novinki/card-2.png" class="card-img-top" alt="Товар 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Мороженое ТИРАМИСУ</h5>
+                                            <p class="card-text">Мороженое со вкусом Тирамису, Сорбет и другие вкусы в
+                                                кофейне!</p>
+                                            <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-1.2">
+                                                Описание
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="../img/menu/novinki/card-3.png" class="card-img-top" alt="Товар 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Чай "СЕКРЕТ ЗНАХАРЯ"</h5>
+                                            <p class="card-text">Черный чай с добавками. Хорош в горячем и холодном
+                                                виде! </p>
+                                            <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-1.3">
+                                                Описание
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="../img/menu/novinki/card-4.png" class="card-img-top" alt="Товар 4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Свежая выпечка</h5>
+                                            <p class="card-text">В наличии свежий хлебушек из качественных ингридиентов
+                                            </p>
+                                            <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-1.4">
+                                                Описание
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-contaner secret">
+                <div class="container my-5">
+                    <!-- Карусель для новинок -->
+                    <div id="novinkiCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Слайды -->
+                        <div class="carousel-inner">
+                            <!-- Первая карточка -->
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/novinki/card-1.png" class="card-img-top" alt="Товар 1">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Чайные наборы</h5>
+                                                <p class="card-text">Мини-наборы чайной коллекции в подарок</p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-1.1">
+                                                    Описание
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Вторая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/novinki/card-2.png" class="card-img-top" alt="Товар 2">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Мороженое ТИРАМИСУ</h5>
+                                                <p class="card-text">Мороженое со вкусом Тирамису, Сорбет и другие вкусы в кофейне!</p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-1.2">
+                                                    Описание
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Третья карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/novinki/card-3.png" class="card-img-top" alt="Товар 3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Чай "СЕКРЕТ ЗНАХАРЯ"</h5>
+                                                <p class="card-text">Черный чай с добавками. Хорош в горячем и холодном виде!</p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-1.3">
+                                                    Описание
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Четвертая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/novinki/card-4.png" class="card-img-top" alt="Товар 4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Свежая выпечка</h5>
+                                                <p class="card-text">В наличии свежий хлебушек из качественных ингридиентов</p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-1.4">
+                                                    Описание
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Стрелки для переключения -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#novinkiCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#novinkiCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- для напитков -->
+            <div class="menu-contaner keep_secret" id="drinks">
+                <h2>Напитки</h2>
+                <div class="container my-5">
+                    <div id="cardCarousel-1" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Слайды -->
+                        <div class="carousel-inner">
+                            <h2>Кофе</h2>
+                            <!-- Первый слайд (4 карточки) -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.png" class="card-img-top" alt="Товар 1">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Эспрессо/Доппио</h5>
+                                                <p class="card-text">Обычный или двойной эспрессо. Для любителей чистого
+                                                    кофейного вкуса</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.1">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-2.png" class="card-img-top" alt="Товар 2">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Кортадо</h5>
+                                                <p class="card-text">Кофе и молоко в 1:1 (эспрессо&горячее молоко).</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.2">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-3.png" class="card-img-top" alt="Товар 3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Американо</h5>
+                                                <p class="card-text">Эспрессо с добавлением горчей воды. Можем сделать
+                                                    Айс Американо.</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.3">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-4.png" class="card-img-top" alt="Товар 4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Капучино</h5>
+                                                <p class="card-text">1/3 эспрессо, 1/3 горячего
+                                                    молока и 1/3 молочной пены (взбитое молоко)</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.4">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Второй слайд (4 карточки) -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-5.png" class="card-img-top" alt="Товар 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Флет Уайт</h5>
+                                                <p class="card-text">Двойного эспрессо и горячего молока с небольшим
+                                                    количеством пены</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.5">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-6.png" class="card-img-top" alt="Товар 6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Латте | Айс латте</h5>
+                                                <p class="card-text">Трёхслойная смесь из молочной пены, молока и кофе
+                                                    эспрессо</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.6">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-7.png" class="card-img-top" alt="Товар 7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Мокачино</h5>
+                                                <p class="card-text">Эспрессо с добавлением шоколада и молочной пены</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.7">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-8.png" class="card-img-top" alt="Товар 8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Раф</h5>
+                                                <p class="card-text">Эспрессо с добавлением ванильного и простого
+                                                    сахара, а также сливок.</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.8">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Третий слайд (4 карточки) -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-9.png" class="card-img-top" alt="Товар 9">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Гляссе</h5>
+                                                <p class="card-text"> Холодный напиток на основе кофе с добавлением
+                                                    мороженого</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.9">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-10.png" class="card-img-top"
+                                                alt="Товар 10">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Кофейный милкшейк</h5>
+                                                <p class="card-text">Молочный коктейль на основе молока и мороженого с
+                                                    добавление кофе</p>
+                                                <p class="card-text"><strong>Цена: зависит от размера</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.10">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Кастомные стрелочки -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel-1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel-1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                    <div id="cardCarousel-0" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Слайды -->
+                        <div class="carousel-inner">
+                            <h2>Чай</h2>
+                            <!-- Первый слайд (4 карточки) -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.1.png" class="card-img-top"
+                                                alt="Товар 1">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Чёрный чай БЕЗ ДОБАВОК</h5>
+                                                <p class="card-text">Многообразие сборов и сортов черного чая из
+                                                    регионов</p>
+                                                <p class="card-text"><strong>Цена: зависит от чая</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.1">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.2.png" class="card-img-top"
+                                                alt="Товар 2">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Молочный Улун</h5>
+                                                <p class="card-text">Полуферментированный чай родом из Китая.</p>
+                                                <p class="card-text"><strong>Цена: зависит от чая</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.2">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.3.png" class="card-img-top"
+                                                alt="Товар 3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Таежный чай</h5>
+                                                <p class="card-text">Чёрный Цейлонский чай с таёжных секретов</p>
+                                                <p class="card-text"><strong>Цена: 20г. - 75 руб </strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.3">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.4.png" class="card-img-top"
+                                                alt="Товар 4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ройбуш Пряный Апельсин</h5>
+                                                <p class="card-text">Ароматный и насыщенный напиток на основе
+                                                    южноафриканского ройбуша</p>
+                                                <p class="card-text"><strong>Цена: 20г. - 120 руб.</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.4">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Второй слайд (4 карточки) -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.5.png" class="card-img-top"
+                                                alt="Товар 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ДЛЯ САМОЙ-САМОЙ</h5>
+                                                <p class="card-text">Черный чай, тонизирующий, с вкусовыми добавками
+                                                </p>
+                                                <p class="card-text"><strong>Цена: 20гр - 110₽</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.5">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.6.png" class="card-img-top"
+                                                alt="Товар 6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Утренний Самарканд</h5>
+                                                <p class="card-text">Зеленый китайский час с фруктовыми кусочками </p>
+                                                <p class="card-text"><strong>Цена: 20гр - 110₽</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.6">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.7.png" class="card-img-top"
+                                                alt="Товар 7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Источник жизни</h5>
+                                                <p class="card-text">Травяной сбор с 1 000 вытаминов одной кружке</p>
+                                                <p class="card-text"><strong>Цена: 20гр - 80₽</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.7">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.8.png" class="card-img-top"
+                                                alt="Товар 8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Хвойный лес</h5>
+                                                <p class="card-text">Здоровые легкие после одной чашечки зеленого чая
+                                                </p>
+                                                <p class="card-text"><strong>Цена: 20гр - 80₽</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-tea.8">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Кастомные стрелочки -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel-0"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel-0"
+                            data-bs-slide="next" id="bistro">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-contaner secret" id="drinks">
+                <h2>Напитки</h2>
+                <div class="container my-5">
+                    <!-- Карусель для напитков -->
+                    <div id="drinksCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Первая карточка -->
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-1.png" class="card-img-top" alt="Товар 1">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Эспрессо/Доппио</h5>
+                                                <p class="card-text">Обычный или двойной эспрессо. Для любителей чистого кофейного вкуса</p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.1">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Вторая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/drinks/card-2.png" class="card-img-top" alt="Товар 2">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Кортадо</h5>
+                                                <p class="card-text">Кофе и молоко в 1:1 (эспрессо&горячее молоко).</p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2.2">
+                                                    Подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Стрелки для переключения -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#drinksCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#drinksCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- для бистро -->
+            <div class="menu-contaner keep_secret" id="bistro">
+                <h2>Бистро/Пекарня</h2>
+                <div class="container my-5">
+                    <div id="cardCarousel-2" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Слайды -->
+                        <div class="carousel-inner">
+                            <!-- Первый слайд (4 карточки) -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-1.png" class="card-img-top" alt="Товар 1">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Хот-дог</h5>
+                                                <p class="card-text">сосиска, лист салата, сыр релиш, лук, соус,
+                                                    пшеничная булочка</p>
+                                                <p class="card-text"><strong>Цена: 270 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-2.png" class="card-img-top" alt="Товар 2">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Кекс шоколадный</h5>
+                                                <p class="card-text">Горячая выпечка. Так же есть кекс творожный без/с
+                                                    изюмом</p>
+                                                <p class="card-text"><strong>Цена: 45-55 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-3.png" class="card-img-top" alt="Товар 3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Булочки с маком</h5>
+                                                <p class="card-text">Так же есть булочки с сахаром, корицей, изюмом</p>
+                                                <p class="card-text"><strong>Цена: 50 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-4.png" class="card-img-top" alt="Товар 4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Булочки с корицей</h5>
+                                                <p class="card-text">Так же есть булочки с сахаром, маком, изюмом</p>
+                                                <p class="card-text"><strong>Цена: 45 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Второй слайд (4 карточки) -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-5.png" class="card-img-top" alt="Товар 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Шаверма</h5>
+                                                <p class="card-text">Курица, огурцы, помидоры, пекинская капуста, лук,
+                                                    соус, лаваш</p>
+                                                <p class="card-text"><strong>Цена: 250 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-6.png" class="card-img-top" alt="Товар 6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Гамбургер</h5>
+                                                <p class="card-text">Говядина, маринованый огурчик, салата, помидор,
+                                                    лук, соус</p>
+                                                <p class="card-text"><strong>Цена: 270 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-7.png" class="card-img-top" alt="Товар 7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Шаверма на тарелке</h5>
+                                                <p class="card-text">курица, лук, пекинская капуста, питта (собственного
+                                                    изготовления) и др.</p>
+                                                <p class="card-text"><strong>Цена: 350 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-8.png" class="card-img-top" alt="Товар 8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Орешки со сгущенкой</h5>
+                                                <p class="card-text">Вкусные орешки со сгущенкой прямо из детства</p>
+                                                <p class="card-text"><strong>Цена: 30 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Кастомные стрелочки -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel-2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel-2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-contaner secret" id="bistro">
+                <h2>Бистро/Пекарня</h2>
+                <div class="container my-5">
+                    <!-- Карусель для бистро -->
+                    <div id="bistroCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Слайды -->
+                        <div class="carousel-inner">
+                            <!-- Первая карточка -->
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-1.png" class="card-img-top" alt="Товар 1">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Хот-дог</h5>
+                                                <p class="card-text">сосиска, лист салата, сыр релиш, лук, соус, пшеничная булочка</p>
+                                                <p class="card-text"><strong>Цена: 270 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Вторая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-2.png" class="card-img-top" alt="Товар 2">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Кекс шоколадный</h5>
+                                                <p class="card-text">Горячая выпечка. Так же есть кекс творожный без/с изюмом</p>
+                                                <p class="card-text"><strong>Цена: 45-55 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Третья карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-3.png" class="card-img-top" alt="Товар 3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Булочки с маком</h5>
+                                                <p class="card-text">Так же есть булочки с сахаром, корицей, изюмом</p>
+                                                <p class="card-text"><strong>Цена: 50 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Четвертая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-4.png" class="card-img-top" alt="Товар 4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Булочки с корицей</h5>
+                                                <p class="card-text">Так же есть булочки с сахаром, маком, изюмом</p>
+                                                <p class="card-text"><strong>Цена: 45 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Пятая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-5.png" class="card-img-top" alt="Товар 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Шаверма</h5>
+                                                <p class="card-text">Курица, огурцы, помидоры, пекинская капуста, лук, соус, лаваш</p>
+                                                <p class="card-text"><strong>Цена: 250 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Шестая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-6.png" class="card-img-top" alt="Товар 6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Гамбургер</h5>
+                                                <p class="card-text">Говядина, маринованый огурчик, салата, помидор, лук, соус</p>
+                                                <p class="card-text"><strong>Цена: 270 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Седьмая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-7.png" class="card-img-top" alt="Товар 7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Шаверма на тарелке</h5>
+                                                <p class="card-text">курица, лук, пекинская капуста, питта (собственного изготовления) и др.</p>
+                                                <p class="card-text"><strong>Цена: 350 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Восьмая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/bistro/card-8.png" class="card-img-top" alt="Товар 8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Орешки со сгущенкой</h5>
+                                                <p class="card-text">Вкусные орешки со сгущенкой прямо из детства</p>
+                                                <p class="card-text"><strong>Цена: 30 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Стрелки для переключения -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bistroCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bistroCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- для подарков -->
+            <div class="menu-contaner keep_secret" id="presents">
+                <h2>Подарочные наборы</h2>
+                <div class="container my-5">
+                    <div id="cardCarousel-3" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Слайды -->
+                        <div class="carousel-inner">
+                            <!-- Первый слайд (4 карточки) -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/prisents/card-1.png" class="card-img-top"
+                                                alt="Товар 1">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ореховый набор</h5>
+                                                <p class="card-text">Отборные грецкие орехи, миндаль, кешью, бразильский
+                                                    и фундук Всё дополняют кусочки сухофруктов.</p>
+                                                <p class="card-text"><strong>Цена: 700₽</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/prisents/card-2.png" class="card-img-top"
+                                                alt="Товар 2">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Зеленое ассорти</h5>
+                                                <p class="card-text">Разные виды зеленого чая из регионов, без добавок.
+                                                    Тонизирующее ассорти для самых нежных.</p>
+                                                <p class="card-text"><strong>Цена: 500 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/prisents/card-3.png" class="card-img-top"
+                                                alt="Товар 3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Чайный букет</h5>
+                                                <p class="card-text">Ассорти из черного вкусового чая с плиткой
+                                                    шоколада. Вау-эффект гарантирован</p>
+                                                <p class="card-text"><strong>Цена: 1100 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="../img/menu/prisents/card-4.png" class="card-img-top"
+                                                alt="Товар 4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">УНИКАЛЬНЫЙ НАБОР</h5>
+                                                <p class="card-text">Оставь заявку в форме ниже, чтобы мы собрали
+                                                    подарочный набор по вашим желаниям</p>
+                                                <p class="card-text"><strong>Цена: зависит от деталей сборки</strong>
+                                                </p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-3.1">
+                                                    Заказать
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-contaner secret" id="presents">
+                <h2>Подарочные наборы</h2>
+                <div class="container my-5">
+                    <!-- Карусель для подарков -->
+                    <div id="presentsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Слайды -->
+                        <div class="carousel-inner">
+                            <!-- Первая карточка -->
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/prisents/card-1.png" class="card-img-top" alt="Товар 1">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ореховый набор</h5>
+                                                <p class="card-text">Отборные грецкие орехи, миндаль, кешью, бразильский и фундук. Всё дополняют кусочки сухофруктов.</p>
+                                                <p class="card-text"><strong>Цена: 700₽</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Вторая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/prisents/card-2.png" class="card-img-top" alt="Товар 2">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Зеленое ассорти</h5>
+                                                <p class="card-text">Разные виды зеленого чая из регионов, без добавок. Тонизирующее ассорти для самых нежных.</p>
+                                                <p class="card-text"><strong>Цена: 500 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Третья карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/prisents/card-3.png" class="card-img-top" alt="Товар 3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Чайный букет</h5>
+                                                <p class="card-text">Ассорти из черного вкусового чая с плиткой шоколада. Вау-эффект гарантирован.</p>
+                                                <p class="card-text"><strong>Цена: 1100 руб.</strong></p>
+                                                <a class="btn btn-custom">Купить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Четвертая карточка -->
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <img src="../img/menu/prisents/card-4.png" class="card-img-top" alt="Товар 4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">УНИКАЛЬНЫЙ НАБОР</h5>
+                                                <p class="card-text">Оставь заявку в форме ниже, чтобы мы собрали подарочный набор по вашим желаниям.</p>
+                                                <p class="card-text"><strong>Цена: зависит от деталей сборки</strong></p>
+                                                <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal-3.1">
+                                                    Заказать
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Стрелки для переключения -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#presentsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#presentsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Modal 1.1 -->
+    <div class="modal fade" id="exampleModal-1.1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Чайные наборы</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Вкусные подарки могут быть совсем небольшими по размерам, но - содержательными по наполнению!
+                    </p>
+                    <p> Такой вот мини-мини букетик со связанным чаем внутри - яркий тому пример: он не только может
+                        украсить любой презент, но, как комплимент, самодостаточен и в одиночестве 😍
+                    </p>
+                    <p> В таком исполнении оформления не уступает и наша новинка ассортимента - чай с предсказанием 😉
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 1.2 -->
+    <div class="modal fade" id="exampleModal-1.2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Чайные наборы</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="text-custom-0">В наличии:</h5>
+                    <p>🍦ЧЕРНИКА-Чизкейк 128р/80гр</p>
+                    <p>🍨БАБЛ ГАМ (с маршмеллоу) 💓120р/80гр</p>
+                    <p>🍦Голубое небо 💙 120р/80гр</p>
+                    <p>🍦РАФФАЭЛЛО С МИНДАЛЁМ 🥥120р/80гр</p>
+                    <p>🍨КЛУБНИКА-БАНАН 🍓🍌 128р/80гр</p>
+                    <p>🍦Шоколадное с кусочками шоколада 🍫120р/80гр</p>
+                    <p>🍦Фисташка 120р/80гр</p>
+                    <p>🍨Арахис соленая карамель 🥜120р/80гр</p>
+                    <p>🍦СОРБЕТ Чёрная КЛУБНИКА 🍓💣 136р/80гр</p>
+                    <p>🍨СОРБЕТ Манго 124р/80гр</p>
+                    <p>🍦Пломбир 92р/80гр</p>
+                    <p class="text-custom-0">Цена указана за шарик. Возможна фасовка в стаканчик с собой или маленький
+                        вафельный рожок)</p>
+                    <p class="text-custom-0 text-custom-1">Мороженое можно купить только на месте <br> (доставка не
+                        осуществляется)</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 1.3 -->
+    <div class="modal fade" id="exampleModal-1.3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Чай "Секрет знахаря"</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Сбор с ягодами черноплодной рябины и брусники, шиповником, кусочками тыквы и яблока, черным
+                        перцем, корой дуба и сенной, черным чаем и каркадэ, лепестками подсолнечника и розы. Настой
+                        коричневого цвета с ярким ароматом ягод и фруктов.
+                    </p>
+                    <p>Хорош в горячем и холодном виде! </p>
+                    <p> Поднимает настроение и помогает справиться с плохим настроением.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 1.4 -->
+    <div class="modal fade" id="exampleModal-1.4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel text-custom-0">Чайные наборы</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="text-custom-0">В наличии свежий хлебушек:</h4>
+                    <div class="modal-body-price-tea">
+                        <div class="price-in-modal">
+                            <span>Чиабатта ржаная (на закваске) <span class="text-custom-1">85р</span> </span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span>Чиабатта пшеничная <span class="text-custom-1">85р</span> </span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span>На зелёной грече (на закваске)<span class="text-custom-1">80р</span> </span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span>Цельнозерновой (на закваске)<span class="text-custom-1">80р</span> </span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2.1 -->
+    <div class="modal fade" id="exampleModal-2.1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Эспрессо/Доппио</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">200</span> мл - <span class="text-custom-0">100</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">300</span> мл - <span class="text-custom-0">120</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2.2 -->
+    <div class="modal fade" id="exampleModal-2.2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Кортадо</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">200</span> мл - <span class="text-custom-0">130</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">300</span> мл - <span class="text-custom-0">160</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2.3 -->
+    <div class="modal fade" id="exampleModal-2.3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Американо</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">200</span> мл - <span class="text-custom-0">120</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">300</span> мл - <span class="text-custom-0">150</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">400</span> мл - <span class="text-custom-0">180</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2.4 -->
+    <div class="modal fade" id="exampleModal-2.4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Капучино</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="200"></span> мл - <span class="text-custom-0">135</span> руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">300</span> мл - <span class="text-custom-0">170</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">300</span> мл - <span class="text-custom-0">200</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">300</span> мл - <span class="text-custom-0">230</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2.5 -->
+    <div class="modal fade" id="exampleModal-2.5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Флет Уайт</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">200</span> мл - <span class="text-custom-0">160</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="300"></span> мл - <span class="text-custom-0">190</span> руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">400</span> мл - <span class="text-custom-0">230</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2.6 -->
+    <div class="modal fade" id="exampleModal-2.6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Латте</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">200</span> мл - <span class="text-custom-0">135</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">300</span> мл - <span class="text-custom-0">170</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">500</span> мл - <span class="text-custom-0">230</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2.7 -->
+    <div class="modal fade" id="exampleModal-2.7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Мокачино</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">300</span> мл - <span class="text-custom-0">190</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">400</span> мл - <span class="text-custom-0">220</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2.8 -->
+    <div class="modal fade" id="exampleModal-2.8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Раф</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">200</span> мл - <span class="text-custom-0">180</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">300</span> мл - <span class="text-custom-0">230</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">400</span> мл - <span class="text-custom-0">280</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2.9 -->
+    <div class="modal fade" id="exampleModal-2.9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Гляссе</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span> <span class="text-custom-0">200</span> мл - <span class="text-custom-0">220</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">300</span> мл - <span class="text-custom-0">300</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2.10 -->
+    <div class="modal fade" id="exampleModal-2.10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Эспрессо/Доппио</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">300</span> мл - <span class="text-custom-0">220</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">500</span> мл - <span class="text-custom-0">300</span>
+                                руб</span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3.1 -->
+    <div class="modal fade" id="exampleModal-3.1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Заказ подарочного набора</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="order-present" action="/submit-order" method="POST">
+                        <!-- Контактные данные -->
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label text-custom-1">ФИО:</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName"
+                                placeholder="Иванов Иван Иванович" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label text-custom-1">Телефон:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone"
+                                placeholder="+7 (999) 999-99-99" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label text-custom-1">Дата:</label>
+                            <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="time" class="form-label text-custom-1">Время:</label>
+                            <input type="time" class="form-control" id="time" name="time" required>
+                        </div>
+                        <div class="mb-3 check-fill-set">
+                            <label class="form-label text-custom-1">Выберите, что добавить в ваш набор:</label>
+                            <div class="text-custom-0">
+                                <input type="checkbox" id="tea" name="fill_set[]" value="Чай"> Чай
+                            </div>
+                            <div class="text-custom-0">
+                                <input type="checkbox" id="chocolate" name="fill_set[]" value="Шоколад"> Шоколад
+                            </div>
+                            <div class="text-custom-0">
+                                <input type="checkbox" id="nuts" name="fill_set[]" value="Орехи"> Орехи
+                            </div>
+                            <div class="text-custom-0">
+                                <input type="checkbox" id="cookies" name="fill_set[]" value="Печенье"> Печенье
+                            </div>
+                            <div class="text-custom-0">
+                                <input type="checkbox" id="dried_fruits" name="fill_set[]" value="Сухофрукты">
+                                Сухофрукты
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comments" class="form-label text-custom-1">Опишите, как бы вы хотели, чтобы
+                                выглядел букет, свои пожелания к заказу:</label>
+                            <textarea class="form-control" id="comments" name="comments" rows="3"
+                                placeholder="Напишите ваши пожелания"></textarea>
+                        </div>
+
+                        <!-- Кнопка отправки -->
+                        <button type="submit" class="btn btn-custom">Отправить</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal tea.1 -->
+    <div class="modal fade" id="exampleModal-tea.1" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Черный чай без добавок</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-price-tea">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Цейлон ОР</span> <span
+                                    class="text-custom-1">315₽/100гр</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Кения Макомбоки </span> <span
+                                    class="text-custom-1">420₽/100гр</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Кения Манунга </span> <span
+                                    class="text-custom-1">400₽/100гр</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Кенийский Golden Tips </span> <span
+                                    class="text-custom-1">352₽/100гр</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Кения Итумба </span> <span
+                                    class="text-custom-1">440₽/100гр</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Кения Рукурири </span> <span
+                                    class="text-custom-1">410₽/100гр</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Индия Манкотта </span><span class="text-custom-1">583
+                                    ₽/100гр</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Индонезия Суматра</span> <span
+                                    class="text-custom-1">347₽/100гр</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal tea.2 -->
+    <div class="modal fade" id="exampleModal-tea.2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Молочный Улун</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Молочный улун укрепляет стенки сосудов, снижает фактор риска образования тромбов.</p>
+                    <p> У него широкий спектр антиоксидантов, оказывает благотворное влияние на кожу, делает ее упругой,
+                        даря эффект омоложения. Кофеин в составе этого чая мягко тонизирует, бодрит и придает сил.
+                    </p>
+                    <p>Улун оказывает благоприятное воздействие на организм при болезнях сердца. Снижает уровень
+                        холестерина, провоцирующий атеросклероз.
+                    </p>
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Тайваньский</span> 20гр - <span
+                                    class="text-custom-1">130₽</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Высший сорт</span> 20гр - <span
+                                    class="text-custom-1">97₽</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal tea.3 -->
+    <div class="modal fade" id="exampleModal-tea.3" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Чай "Таёжный сбор"</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-custom-1">Состав: </p>
+                    <p>
+                        Чёрный Цейлонский чай с добавлением ягод брусники, черноплодки, цельных ягод ежевики, лепестков
+                        календулы, василька и брусничного листа. Чай богат всеми необходимыми для человека витаминами и
+                        минералами.
+                    </p>
+                    <p> При заваривании даёт отвар тёмно-коричневого цвета с приятно-свежим вкусом и ароматом таёжных
+                        ягод.
+                    </p>
+                    <p> Тонизирует и повышает иммунитет, улучшает пищеварение, снимает головные боли, укрепляет нервную
+                        систему.</p>
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Таежный чай</span> 20гр - <span
+                                    class="text-custom-1">73₽</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal tea.4 -->
+    <div class="modal fade" id="exampleModal-tea.4" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Чай "Ройбуш Пряный Апельсин"</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>это ароматный и насыщенный напиток на основе южноафриканского ройбуша. Он сочетает в себе
+                        сладковатый вкус ройбуша с яркими цитрусовыми нотами апельсина и пряными оттенками корицы,
+                        гвоздики и кардамона. Этот чай обладает успокаивающим эффектом, не содержит кофеина и подходит
+                        для любого времени суток.</p>
+                    <p class="text-custom-1">Состав:</p>
+                    <p>Ройбуш (основа), кусочки апельсина, корица, гвоздика, кардамон.</p>
+
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Ройбуш Пряный Апельсин</span> 20гр - <span
+                                    class="text-custom-1">120₽</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal tea.5 -->
+    <div class="modal fade" id="exampleModal-tea.5" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Чай "ДЛЯ САМОЙ-САМОЙ"</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-custom-1">Состав:</p>
+                    <p>Смесь чёрного Индийского и Цейлонского чая с добавлением ежевики, черноплодной рябины, клубники,
+                        кусочков кокоса, папайи, цветов бессмертника, жасмина, брусничного листа и лепестков сафлора.
+                    </p>
+                    <p>Подарите этот чай самой дорогой женщине на свете, и вы не прогадаете.</p>
+                    <p>При заваривании даёт настой красно-коричневого цвета, насыщенный и ароматный.</p>
+                    <p>Нормализует обмен веществ, повышает настроение и улучшает настроение.</p>
+
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">"ДЛЯ САМОЙ-САМОЙ"</span> 20гр - <span
+                                    class="text-custom-1">110₽</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal tea.6 -->
+    <div class="modal fade" id="exampleModal-tea.6" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Чай "Утренний Самарканд"</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-custom-1">Состав:</p>
+                    <p>Смесь зелёного китайского чая разных плантаций с добавлением кусочков инжира, шиповника, кусочков
+                        дыни и персика, цветов апельсинового дерева, лепестков сафлора и подсолнечника, ягод сушеного
+                        барбариса, долек апельсина и киви.</p>
+                    <p>Отлично сбалансированные вкус и аромат этого чая надолго остаются в памяти с первой минуты
+                        знакомства с ним.</p>
+                    <p>При заваривании даёт настой жёлто-зелёного цвета с глубоким вкусом и свежим ароматом.</p>
+                    <p>Улучшает пищеварение, укрепляет нервную систему и улучшает обмен веществ.</p>
+
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">"Утренний Самарканд"</span> 20гр - <span
+                                    class="text-custom-1">130₽</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal tea.7 -->
+    <div class="modal fade" id="exampleModal-tea.7" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Источник жизни (1000 витаминов)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-custom-1">Состав:</p>
+                    <p>Травяной сбор с душицей, мятой, мелиссой и чабрецом, шиповником, ягодами черноплодной рябины,
+                        клюквы, малины и клубники, зеленым чая и кусочками яблока.</p>
+                    <p>Способствует укреплению иммунитета и общему оздоровлению организма, обладает
+                        противовоспалительными и антибактериальными свойствами.</p>
+                    <p>Особенно полезен детям!</p>
+
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Источник жизни</span> 20гр - <span
+                                    class="text-custom-1">80₽</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal tea.8 -->
+    <div class="modal fade" id="exampleModal-tea.8" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom-0" id="exampleModalLabel">Хвойный лес (Здоровые легкие )</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-custom-1">Состав:</p>
+                    <p>Травяной сбор, состоящий из листьев эвкалипта, мяты, пустырника и иван-чая, плодов можжевельника,
+                        корня солодки, сосновых почек и шиповника, зеленого чая, цветков липы, ягод вишни и ежевики.</p>
+                    <p>Способствует укреплению иммунитета и облегчению дыхания.</p>
+                    <p>Особенно полезен при заболеваниях верхних дыхательных путей.</p>
+
+                    <div class="modal-body-price-coffe">
+                        <div class="price-in-modal">
+                            <span><span class="text-custom-0">Источник жизни</span> 20гр - <span
+                                    class="text-custom-1">80₽</span></span>
+                            <button type="button" class="btn btn-custom" data-bs-dismiss="modal">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="menu-footer">
+            <li class="step-menu">
+                <a href="../index.html">Главная</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/menu.html">Меню</a>
+                <a href="../page/menu.html#novinki" id="a-side">Новинки</a>
+                <a href="../page/menu.html#drinks" id="a-side">Напитки</a>
+                <a href="../page/menu.html#bistro" id="a-side">Бистро/Пекарня</a>
+                <a href="../page/menu.html#presents" id="a-side">Подарочные наборы</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/delivery.html#deliver">Доставка</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/booking.html">Бронирование</a>
+                <a href="../page/booking.html" id="a-side">Забронировать столик</a>
+                <a href="../page/booking.html#hall_reservation" id="a-side">Заказать зал</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/news.html">Новости</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/galery.html">Галерея</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/about-us.html">О Нас</a>
+                <a href="../page/about-us.html" id="a-side">Кто мы?</a>
+                <a href="../page/about-us.html#contact" id="a-side">Контакты</a>
+                <a href="../page/about-us.html#retwit" id="a-side">Отзывы</a>
+            </li>
+        </ul>
+        <div class="image-links">
+            <a href="https://vk.com/coffeessovoy35" target="_blank">
+                <img src="../img/icon/vk.png" alt="Вконтакте">
+            </a>
+            <a href="https://www.instagram.coffeessovoy35" target="_blank">
+                <img src="../img/icon/instagram.png" alt="Инстаграм">
+            </a>
+            <a href="https://wa.me/79115128112" target="_blank">
+                <img src="../img/icon/whatsapp.png" alt="Ватсап">
+            </a>
+        </div>
+        <div class="logotip-footer">
+            <a href="#"><img src="../img/header/logo.jpg" alt=""></a>
+        </div>
+        <div class="kapcha">
+            <span>Все права пренадлежать "Кофе с СоВой" | Каманина Алина ИСП-421р | @sun_rise3001</span>
+            <span id="years-develop">2024-2025</span>
+        </div>
+    </footer>
+    <button id="scrollToTop" aria-label="Наверх">
+        &#8593; <!-- Стрелочка вверх -->
+    </button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="../js/script.js"></script>
+
+
+<script>
+    // Обработчик события submit
+    document.getElementById('order-present').addEventListener('submit', function (event) {
+        event.preventDefault(); // Предотвращаем стандартную отправку формы
+
+        // Собираем данные формы
+        const formData = new FormData(this);
+
+        // Пример вывода данных в консоль
+        for (let [key, value] of formData.entries()) {
+            console.log(key, value);
+        }
+
+        // Закрытие модальных окон
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                loginModal.style.display = 'none';
+                registerModal.style.display = 'none';
+            });
+        });
+
+        // Здесь можно отправить данные на сервер через fetch или XMLHttpRequest
+        // fetch('/submit-order', { method: 'POST', body: formData })
+        //   .then(response => response.json())
+        //   .then(data => console.log(data))
+        //   .catch(error => console.error(error));
+
+        alert('Форма успешно отправлена! Мы свяжемся с вами в близжайшее время');
+    });
+
+    document.getElementById('addToCartButton').addEventListener('click', function () {
+        const notification = document.getElementById('notification');
+        notification.classList.remove('hidden');
+        notification.classList.add('show');
+
+        setTimeout(() => {
+            notification.classList.remove('show');
+            notification.classList.add('hidden');
+        }, 3000);
+    });
+</script>
+</html>

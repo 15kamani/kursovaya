@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Кофе с СоВой - Профиль&Корзина</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-menu">
+            <div class="media-icon hidden">
+                <a href="https://vk.com/coffeessovoy35"><img src="../img/icon/vk.png" alt="Вконтакте"></a>
+                <a href="https://wa.me/79115128112"><img src="../img/icon/instagram.png" alt="Ватсап"></a>
+                <a href="https://www.instagram.coffeessovoy35"><img src="../img/icon/whatsapp.png" alt="Инстаграм"></a>
+            </div>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/header/logo.jpg" alt="Логотип кофейни 'Кофе с СоВой'"></a>
+            </div>
+            <div class="contact-menu hidden">
+                <div class="contact-tools">
+                    <div class="contact-tool">
+                        <img src="../img/header/location.png" alt="Город, где находится чудестная кофейня">
+                        <a>Вытегра</a>
+                    </div>
+                    <div class="contact-tool">
+                        <div class="text-to-copy" onclick="copyText(this)"><img src="../img/header/phone.png"
+                                alt="Номер телефона для связи">+7 (911) 512-81-12</div>
+                    </div>
+                </div>
+                <div class="btn-order">
+                    <div class="button-container">
+                        <button class="hover-button" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</button>
+                        <div class="owl-tooltip">🦉</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttom-menu">
+            <!-- Навигационное меню -->
+            <nav class="navbar navbar-expand-lg bg-f7eabd">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Профиль
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Карта профиля</a>
+                                <a class="dropdown-item" href="#cart">Корзина</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Меню
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../page/menu.html#novinki">Новинки</a>
+                                <a class="dropdown-item" href="../page/menu.html#drinks">Напитки</a>
+                                <a class="dropdown-item" href="../page/menu.html#bistro">Бистро/Пекарня</a>
+                                <a class="dropdown-item" href="../page/menu.html#presents">Подарочные наборы</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/delivery.html#deliver">Доставка</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownBooking" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Бронирование
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
+                                <a class="dropdown-item" href="../page/booking.html">Забронировать столик</a>
+                                <a class="dropdown-item" href="../page/booking.html#hall_reservation">Заказать зал</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../page/news.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/galery.html">Галерея</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                О Нас
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
+                                <a class="dropdown-item" href="../page/about-us.html">Кто мы?</a>
+                                <a class="dropdown-item" href="../page/about-us.html#contact">Контакты</a>
+                                <a class="dropdown-item" href="../page/about-us.html#impotant">Создатели</a>
+                                <a class="dropdown-item" href="../page/about-us.html#retwit">Отзывы</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Навигационное меню с бургером -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-f7eabd" id="none-display">
+            <!-- Кнопка бургера -->
+            <img src="../img/header/logo.jpg" alt="Логотип" class="logo-burger">
+            <div class="btn-order">
+                <div class="button-container">
+                    <button class="hover-button" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</button>
+                    <div class="owl-tooltip">🦉</div>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Меню -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Меню
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#novinki">Новинки</a>
+                            <a class="dropdown-item" href="#drinks">Напитки</a>
+                            <a class="dropdown-item" href="#bistro">Бистро/Пекарня</a>
+                            <a class="dropdown-item" href="#presents">Подарочные наборы</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="delivery.html#deliver">Доставка</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Бронирование
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
+                            <a class="dropdown-item" href="booking.html">Забронировать столик</a>
+                            <a class="dropdown-item" href="booking.html#hall_reservation">Заказать зал</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galery.html">Галерея</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            О Нас
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
+                            <a class="dropdown-item" href="about-us.html">Кто мы?</a>
+                            <a class="dropdown-item" href="about-us.html#contact">Контакты</a>
+                            <a class="dropdown-item" href="about-us.html#impotant">Создатели</a>
+                            <a class="dropdown-item" href="about-us.html#retwit">Отзывы</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+
+            <!-- Модальное окно входа -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <h2 class="garmond-1">Вход</h2>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="div-forms">
+                            <div class="div-form">
+                                <label for="loginUsername">Логин:</label>
+                                <input type="text" id="loginUsername" name="loginUsername" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="loginPassword">Пароль:</label>
+                                <input type="password" id="loginPassword" name="loginPassword" required>
+                            </div>
+
+                            <label>
+                                <input type="checkbox" id="rememberMe"> Запомнить меня
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-submit">Войти</button>
+                        <p class="text-custom-1" style="margin-top: 3%;">Нет аккаунта? <a href="#"
+                                data-bs-target="#registerModal" data-bs-toggle="modal">Зарегистрироваться</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Модальное окно регистрации -->
+
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"><h2 class="garmond-1">Регистрация</h2></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="div-forms">
+                            <div class="div-form">
+                                <label for="registerFullName">ФИО<span class="red">*</span>:</label>
+                                <input type="text" id="registerFullName" name="registerFullName" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerUsername">Логин<span class="red">*</span>:</label>
+                                <input type="text" id="registerUsername" name="registerUsername" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerPhone">Номер телефона<span class="red">*</span>:</label>
+                                <input type="tel" id="registerPhone" name="registerPhone" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerEmail">Почта:</label>
+                                <input type="email" id="registerEmail" name="registerEmail" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerPassword">Пароль<span class="red">*</span>:</label>
+                                <input type="password" id="registerPassword" name="registerPassword" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerConfirmPassword">Подтверждение пароля<span class="red">*</span>:</label>
+                                <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" required>
+                            </div>
+                            <label>
+                                <input type="checkbox" id="agreeToTerms" required> Согласен на обработку персональных
+                                данных<span class="red">*</span>
+                            </label>
+                        </div>
+    
+                        <button type="submit" class="btn-submit">Зарегистрироваться</button>
+                        <p class="text-custom-1" style="margin-top: 3%;">Есть аккаунт? <a href="#" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</a></p>
+                        <span><span class="red">*</span> - поля, обязательные для заполнения</span>
+                        <a href="page/cart.html">Просмотр аккаунта</a>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+    <div id="tooltip" class="tooltip">Номер скопирован!</div>
+
+    <main class="gallery">
+        <div class="kroshka">
+            <p><a href="../index.html">Главная</a> > <a href="#">Профиль</a></p>
+        </div>
+        <div class="profile">
+            <h1>Профиль</h1>
+            <div class="profile-card card">
+                <div class="user-card">
+                    <div class="user-card-img">
+                        <img src="../img/user.png" alt="">
+                        <p class="text-custom-1" id="cart">Login</p>
+                    </div>
+                    <div class="user-card-info">
+                        <p><span class="garmond-1">Имя: </span>Алина</p>
+                        <p><span class="garmond-1">Фамилия: </span>Каманина</p>
+                        <p><span class="garmond-1">Телефон: </span>+ 7 911-xxx-xx-xx</p>
+                        <p><span class="garmond-1">Почта: </span>pochta@text.ru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <h1>Корзина</h1>
+            <div class="cart-cart">
+                <div class="set-carts">
+                    <!-- Карточка 1: Таежный чай -->
+                    <div class="cart-once card">
+                        <img src="../img/menu/drinks/card-1.3.png" alt="Чай Ройбуш">
+                        <div class="text-cart-once">
+                            <h3>Таежный чай</h3>
+                            <p>Количество: <span id="weight1" class="text-custom-1">20</span> г</p>
+                            <p>Цена: <span id="price1" class="text-custom-1">75</span> руб</p>
+                            <button class="btn-custom btn-prise" onclick="changeWeight(1, -5)">-</button>
+                            <button class="btn-custom btn-prise" onclick="changeWeight(1, 5)">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2: Товар 2 -->
+                    <div class="cart-once card">
+                        <img src="../img/menu/bistro/card-1.png" alt="Товар 2">
+                        <div class="text-cart-once">
+                            <h3>Хот-дог</h3>
+                            <p>Количество: <span id="quantity2" class="text-custom-1">1</span> шт</p>
+                            <p>Цена: <span id="price2" class="text-custom-1">270</span> руб</p>
+                            <button class="btn-custom btn-prise" onclick="changeQuantity(2, -1)">-</button>
+                            <button class="btn-custom btn-prise" onclick="changeQuantity(2, 1)">+</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Блок общей суммы и предупреждения -->
+                <div class="total-sum">
+                    <div class="card">
+                        <h3>Итого:</h3>
+                        <p>Общая сумма: <span id="totalPrice" class="text-custom-1">345</span> руб</p>
+                        <p class="red">Доставка осуществляется только по городу.</p>
+                        <button class="btn-custom btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Оформить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title garmond-1" id="exampleModalLabel">Оформление заказа</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="years-develop">
+            <p class="garmond-1">Товары:</p>
+            <div class="tovars">
+                <div class="tovar">
+                    <h3><li>Таежный чай</li></h3>
+                    <div class="details-container">
+                        <!-- Чекбокс для управления раскрытием -->
+                        <input type="checkbox" id="details-toggle" class="details-toggle">
+                        
+                        <!-- Текст "детали", который будет кликабельным -->
+                        <label for="details-toggle" class="text-custom-2">детали</label>
+                        
+                        <!-- Блок, который будет раскрываться -->
+                        <div class="details-content">
+                            <p>Количество: <span id="weight1" class="garmond-1">20</span> г</p>
+                            <p>Цена: <span id="price1" class="garmond-1">75</span> руб</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tovar">
+                    <h3><li>Хот-дог</li></h3>
+                    <div class="details-container">
+                        <!-- Чекбокс для управления раскрытием -->
+                        <input type="checkbox" id="details-toggle-0" class="details-toggle">
+                        
+                        <!-- Текст "детали", который будет кликабельным -->
+                        <label for="details-toggle-0" class="text-custom-2">детали</label>
+                        
+                        <!-- Блок, который будет раскрываться -->
+                        <div class="details-content">
+                            <p>Количество: <span id="quantity2" class="garmond-1">1</span> шт</p>
+                            <p>Цена: <span id="price2" class="garmond-1">270</span> руб</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="red-1">Общая сумма: <span id="totalPrice" class="garmond-1">345</span> руб + <span class="garmond-1">200</span> руб за доставку</p>
+                <div class="div-form">
+                    <form id="order-present" action="" method="POST">
+                        <div class="mb-3 check-fill-set">
+                            <label class="form-label text-custom-1">Способ доставки:</label>
+                            <div class="text-custom-0">
+                                <input type="radio" id="tea" name="fill_set[]" value="Самовывоз"> Самовывоз
+                            </div>
+                            <div class="text-custom-0">
+                                <input type="radio" id="chocolate" name="fill_set[]" value="Доставка" required> Доставка
+                            </div>
+                        </div>
+                    <label for="">Адрес доставки:</label>
+                    <input type="text" name="" id="" placeholder="ул.Вянгинская, 29"> 
+                </div>
+                <p class="red red-0">Доставка осуществляется только по городу. <br> Доставка бесплатная <span class="garmond-1">от 1500 рублей.</span></p>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-size: 20px;">Закрыть</button>
+          <button type="submit" class="btn btn-custom">К оплате</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    </main>
+
+    <footer>
+        <ul class="menu-footer">
+            <li class="step-menu">
+                <a href="../index.html">Главная</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/menu.html">Меню</a>
+                <a href="../page/menu.html#novinki" id="a-side">Новинки</a>
+                <a href="../page/menu.html#drinks" id="a-side">Напитки</a>
+                <a href="../page/menu.html#bistro" id="a-side">Бистро/Пекарня</a>
+                <a href="../page/menu.html#presents" id="a-side">Подарочные наборы</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/delivery.html#deliver">Доставка</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/booking.html">Бронирование</a>
+                <a href="../page/booking.html" id="a-side">Забронировать столик</a>
+                <a href="../page/booking.html#hall_reservation" id="a-side">Заказать зал</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/news.html">Новости</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/galery.html">Галерея</a>
+            </li>
+            <li class="step-menu">
+                <a href="../page/about-us.html">О Нас</a>
+                <a href="../page/about-us.html" id="a-side">Кто мы?</a>
+                <a href="../page/about-us.html#contact" id="a-side">Контакты</a>
+                <a href="../page/about-us.html#retwit" id="a-side">Отзывы</a>
+            </li>
+        </ul>
+        <div class="image-links">
+            <a href="https://vk.com/coffeessovoy35" target="_blank">
+                <img src="../img/icon/vk.png" alt="Вконтакте">
+            </a>
+            <a href="https://www.instagram.coffeessovoy35" target="_blank">
+                <img src="../img/icon/instagram.png" alt="Инстаграм">
+            </a>
+            <a href="https://wa.me/79115128112" target="_blank">
+                <img src="../img/icon/whatsapp.png" alt="Ватсап">
+            </a>
+        </div>
+        <div class="logotip-footer">
+            <a href="#"><img src="../img/header/logo.jpg" alt=""></a>
+        </div>
+        <div class="kapcha">
+            <span>Все права пренадлежать "Кофе с СоВой" | Каманина Алина ИСП-421р | @sun_rise3001</span>
+            <span id="years-develop">2024-2025</span>
+        </div>
+    </footer>
+    <button id="scrollToTop" aria-label="Наверх">
+        &#8593; <!-- Стрелочка вверх -->
+    </button>
+
+    <script src="../js/script.js"></script>
+</body>
+<script>
+    document.getElementById('order-present').addEventListener('submit', function (event){
+        alert('Оплата будет на месте, когда вы заберете заказ');
+    });
+
+    // Функция для изменения веса (граммы)
+    function changeWeight(cardId, change) {
+        const weightElement = document.getElementById(`weight${cardId}`);
+        const priceElement = document.getElementById(`price${cardId}`);
+        let weight = parseInt(weightElement.textContent);
+        let price = parseInt(priceElement.textContent);
+
+        // Минимальное количество граммов — 20
+        if (weight + change >= 20) {
+            weight += change;
+            price += change; // Увеличиваем цену на 1 рубль за каждый грамм
+            weightElement.textContent = weight;
+            priceElement.textContent = price;
+            updateTotal();
+        }
+    }
+
+    // Функция для изменения количества (штуки)
+    function changeQuantity(cardId, change) {
+        const quantityElement = document.getElementById(`quantity${cardId}`);
+        const priceElement = document.getElementById(`price${cardId}`);
+        let quantity = parseInt(quantityElement.textContent);
+        let price = parseInt(priceElement.textContent);
+
+        // Минимальное количество штук — 1
+        if (quantity + change >= 1) {
+            quantity += change;
+            price += change * 270; // Увеличиваем цену на 200 рублей за каждую штуку
+            quantityElement.textContent = quantity;
+            priceElement.textContent = price;
+            updateTotal();
+        }
+    }
+
+    // Функция для обновления общей суммы
+    function updateTotal() {
+        const price1 = parseInt(document.getElementById('price1').textContent);
+        const price2 = parseInt(document.getElementById('price2').textContent);
+        const totalPrice = price1 + price2;
+        document.getElementById('totalPrice').textContent = totalPrice;
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

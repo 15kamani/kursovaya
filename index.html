@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Ваши стили -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <!-- Иконка -->
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Кофе с СоВой</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-menu">
+            <div class="media-icon hidden">
+                <a href="https://vk.com/coffeessovoy35"><img src="img/icon/vk.png" alt="Вконтакте"></a>
+                <a href="https://wa.me/79115128112"><img src="img/icon/instagram.png" alt="Ватсап"></a>
+                <a href="https://www.instagram.coffeessovoy35"><img src="img/icon/whatsapp.png" alt="Инстаграм"></a>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="img/header/logo.jpg" alt="Логотип кофейни 'Кофе с СоВой'"></a>
+            </div>
+            <div class="contact-menu hidden">
+                <div class="contact-tools">
+                    <div class="contact-tool">
+                        <img src="img/header/location.png" alt="Город, где находится чудестная кофейня">
+                        <a>Вытегра</a>
+                    </div>
+                    <div class="contact-tool">
+                        <div class="text-to-copy" onclick="copyText(this)"><img src="img/header/phone.png"
+                                alt="Номер телефона для связи">+7 (911) 512-81-12</div>
+                    </div>
+                </div>
+                <div class="btn-order">
+                    <div class="button-container">
+                        <button class="hover-button" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</button>
+                        <div class="owl-tooltip">🦉</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttom-menu">
+            <nav class="navbar navbar-expand-lg bg-f7eabd">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Меню
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="page/menu.html#novinki">Новинки</a>
+                                <a class="dropdown-item" href="page/menu.html#drinks">Напитки</a>
+                                <a class="dropdown-item" href="page/menu.html#bistro">Бистро/Пекарня</a>
+                                <a class="dropdown-item" href="page/menu.html#presents">Подарочные наборы</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page/delivery.html#deliver">Доставка</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Бронирование
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking1">
+                                <a class="dropdown-item" href="page/booking.html">Забронировать столик</a>
+                                <a class="dropdown-item" href="page/booking.html#hall_reservation">Заказать зал</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="page/news.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page/galery.html">Галерея</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                О Нас
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking2">
+                                <a class="dropdown-item" href="page/about-us.html">Кто мы?</a>
+                                <a class="dropdown-item" href="page/about-us.html#contact">Контакты</a>
+                                <a class="dropdown-item" href="page/about-us.html#impotant">Создатели</a>
+                                <a class="dropdown-item" href="page/about-us.html#retwit">Отзывы</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+<!-- Навигационное меню с бургером -->
+<nav class="navbar navbar-expand-lg navbar-light bg-f7eabd" id="none-display">
+    <div class="container-fluid">
+        <!-- Логотип -->
+        <img src="img/header/logo.jpg" alt="Логотип" class="logo-burger">
+
+        <!-- Кнопка "Войти" -->
+        <div class="btn-order">
+            <div class="button-container">
+                <button class="hover-button" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</button>
+                <div class="owl-tooltip">🦉</div>
+            </div>
+        </div>
+
+        <!-- Кнопка бургера -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Меню -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="page/menu.html" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Меню
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="page/menu.html#novinki">Новинки</a>
+                        <a class="dropdown-item" href="page/menu.html#drinks">Напитки</a>
+                        <a class="dropdown-item" href="page/menu.html#bistro">Бистро/Пекарня</a>
+                        <a class="dropdown-item" href="page/menu.html#presents">Подарочные наборы</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page/delivery.html#deliver">Доставка</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="page/booking.html" id="navbarDropdownBooking"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Бронирование
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
+                        <a class="dropdown-item" href="page/booking.html">Забронировать столик</a>
+                        <a class="dropdown-item" href="page/booking.html#hall_reservation">Заказать зал</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="page/news.html">Новости</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page/galery.html">Галерея</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="page/about-us.html" id="navbarDropdownAbout"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        О Нас
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                        <a class="dropdown-item" href="page/about-us.html">Кто мы?</a>
+                        <a class="dropdown-item" href="page/about-us.html#contact">Контакты</a>
+                        <a class="dropdown-item" href="page/about-us.html#impotant">Создатели</a>
+                        <a class="dropdown-item" href="page/about-us.html#retwit">Отзывы</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+        </div>
+
+        <!-- Модальное окно входа -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><h2 class="garmond-1">Вход</h2></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="loginForm">
+                <div class="div-forms">
+                    <div class="div-form">
+                        <label for="loginUsername">Логин:</label>
+                        <input type="text" id="loginUsername" name="loginUsername" required>
+                    </div>
+                    <div class="div-form">
+                        <label for="loginPassword">Пароль:</label>
+                        <input type="password" id="loginPassword" name="loginPassword" required>
+                    </div>
+
+                    <label>
+                        <input type="checkbox" id="rememberMe"> Запомнить меня
+                    </label>
+                </div>
+                <button type="submit" class="btn-submit">Войти</a></button>
+            <p class="text-custom-1" style="margin-top: 3%;">Нет аккаунта? <a href="#" data-bs-target="#registerModal" data-bs-toggle="modal">Зарегистрироваться</a></p>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- Модальное окно регистрации -->
+
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"><h2 class="garmond-1">Регистрация</h2></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="div-forms">
+                            <div class="div-form">
+                                <label for="registerFullName">ФИО<span class="red">*</span>:</label>
+                                <input type="text" id="registerFullName" name="registerFullName" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerUsername">Логин<span class="red">*</span>:</label>
+                                <input type="text" id="registerUsername" name="registerUsername" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerPhone">Номер телефона<span class="red">*</span>:</label>
+                                <input type="tel" id="registerPhone" name="registerPhone" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerEmail">Почта:</label>
+                                <input type="email" id="registerEmail" name="registerEmail" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerPassword">Пароль<span class="red">*</span>:</label>
+                                <input type="password" id="registerPassword" name="registerPassword" required>
+                            </div>
+                            <div class="div-form">
+                                <label for="registerConfirmPassword">Подтверждение пароля<span class="red">*</span>:</label>
+                                <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" required>
+                            </div>
+                            <label>
+                                <input type="checkbox" id="agreeToTerms" required> Согласен на обработку персональных
+                                данных<span class="red">*</span>
+                            </label>
+                        </div>
+    
+                        <button type="submit" class="btn-submit">Зарегистрироваться</button>
+                        <p class="text-custom-1" style="margin-top: 3%;">Есть аккаунт? <a href="#" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</a></p>
+                        <span><span class="red">*</span> - поля, обязательные для заполнения</span>
+                        <a href="page/cart.html">Просмотр аккаунта</a>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+    <div class="offer">
+        <div class="offer-text hidden">
+            <h2>Где бы ты ни был, чем бы ни занимался:</h2>
+            <div class="icons-for-offer">
+                <div class="icon-offer hidden">
+                    <img src="img/work.png" alt="">
+                    <p>на работе</p>
+                </div>
+                <div class="icon-offer hidden">
+                    <img src="img/romantic-date.png" alt="">
+                    <p>романтическом свидании</p>
+                </div>
+                <div class="icon-offer hidden">
+                    <img src="img/walking.png" alt="">
+                    <p>на прогулке</p>
+                </div>
+            </div>
+            <h2>Кофе с СоВой всегда рядом с тобой!</h2>
+
+            <h3>Также у нас вы можете:</h3>
+            <h3>- приобрести молотый кофе и чай</h3>
+            <h3>- заказать кофейно-чайные букеты</h3>
+            <div class="offer-btn hidden">
+                <a href="page/menu.html"><button class="btn btn-custom">Подробности ></button></a>
+            </div>
+        </div>
+
+    </div>
+    <div id="tooltip" class="tooltip">Номер скопирован!</div>
+    <main>
+        <!-- Слайдер -->
+        <div class="special-event">
+            <div class="container">
+                <div class="event-text hidden">
+                    <h2>Мастер-класс!</h2>
+                    <p class="garmond-1">Приглашаем на мастер-класс по валянию из шерсти МК "Совушка" 1 февраля суббота
+                        14:00</p>
+                    <p>- материалы включены в стоимость</p>
+                    <p>- все понятно и доступно, по шагам</p>
+                    <p>- подходит для начинающих (12+)</p>
+                    <p>- хорошая компания и вкусный кофе</p>
+                    <a href="https://vk.com/id425734"><button class="btn btn-custom hidden">Подробности ></button></a>
+                </div>
+
+                <!-- Исправленный слайдер -->
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Индикаторы -->
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselExample" data-bs-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Слайды -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/carusel/card-1.png" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carusel/card-2.png" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carusel/card-3.png" class="d-block w-100" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carusel/card-4.png" class="d-block w-100" alt="Image 4">
+                        </div>
+                    </div>
+
+                    <!-- Стрелочки (кнопки навигации) -->
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="novinki-nedeli">
+            <h1>Новинки недели</h1>
+            <div class="cards-novinki">
+                <div class="buttom-cards hidden">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/novinki/card-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Подарки любимым!</h5>
+                            <p class="card-text garmond-0">Чайные наборы для самых дорогих!Бесплатная доставка по
+                                г.Вытегра</p>
+                            <p class="card-text"><small class="text-body-secondary">Обновлено два дня назад.</small></p>
+                        </div>
+                    </div>
+                    <div class="card hidden" style="width: 18rem;">
+                        <img src="img/novinki/card-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Новый бариста!</h5>
+                            <p class="card-text garmond-0">Друзья, у нас новый сотрудник Анна , приходите поддержать!!
+                            </p>
+                            <p class="card-text"><small class="text-body-secondary">Обновлено три дня назад.</small></p>
+                        </div>
+                    </div>
+                    <div class="card hidden" style="width: 18rem;">
+                        <img src="img/novinki/card-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Какао под погоду</h5>
+                            <p class="card-text garmond-0">Погода располагает к горячему какао. Всем тепла и райского
+                                настроения!</p>
+                            <p class="card-text"><small class="text-body-secondary">Обновлено три дня назад.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="menu-footer">
+            <li class="step-menu">
+                <a href="#">Главная</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/menu.html">Меню</a>
+                <a href="page/menu.html#novinki" id="a-side">Новинки</a>
+                <a href="page/menu.html#drinks" id="a-side">Напитки</a>
+                <a href="page/menu.html#bistro" id="a-side">Бистро/Пекарня</a>
+                <a href="page/menu.html#presents" id="a-side">Подарочные наборы</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/delivery.html#deliver">Доставка</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/booking.html">Бронирование</a>
+                <a href="page/booking.html" id="a-side">Забронировать столик</a>
+                <a href="page/booking.html#hall_reservation" id="a-side">Заказать зал</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/news.html">Новости</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/galery.html">Галерея</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/about-us.html">О Нас</a>
+                <a href="page/about-us.html" id="a-side">Кто мы?</a>
+                <a href="page/about-us.html#contact" id="a-side">Контакты</a>
+                <a href="page/about-us.html#retwit" id="a-side">Отзывы</a>
+            </li>
+        </ul>
+        <div class="image-links">
+            <a href="https://vk.com/coffeessovoy35" target="_blank">
+                <img src="img/icon/vk.png" alt="Вконтакте">
+            </a>
+            <a href="https://www.instagram.coffeessovoy35" target="_blank">
+                <img src="img/icon/instagram.png" alt="Инстаграм">
+            </a>
+            <a href="#" target="_blank">
+                <img src="img/icon/whatsapp.png" alt="Ватсап">
+            </a>
+        </div>
+        <div class="logotip-footer">
+            <a href="#"><img src="img/header/logo.jpg" alt=""></a>
+        </div>
+        <div class="kapcha">
+            <span>Все права пренадлежать "Кофе с СоВой" | Каманина Алина ИСП-421р | @sun_rise3001</span>
+            <span id="years-develop">2024-2025</span>
+        </div>
+    </footer>
+    <button id="scrollToTop" aria-label="Наверх">
+        &#8593; <!-- Стрелочка вверх -->
+    </button>
+</body>
+<!-- Подключите Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</html>
