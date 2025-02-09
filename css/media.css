@@ -11,6 +11,17 @@
         display: none;
     }
 
+    .about-impotant-persons{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .impotant-person{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #novinki{
         margin-top: 100px;
     }
@@ -82,11 +93,6 @@
 
     .dropdown-menu {
         border: none;
-    }
-
-    .logo-burger{
-        width: 24%;
-        height: auto;
     }
 
     .dropdown-item {
@@ -210,8 +216,13 @@
     }
 
     .offer-about-us{
-        padding-top: 89px;
+        padding-top: 100px;
     }
+
+    .impotant-person img{
+        width: 50%;
+    }
+
     .about-us-tf h3{
         font-size: 18px;
     }
@@ -279,6 +290,10 @@
         font-size: 20px;
     }
 
+    .logo-burger{
+        padding: 1%;
+        width: 6rem;
+    }
 }
 
 /* страница меню */
