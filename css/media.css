@@ -46,7 +46,7 @@
         display: flex;
         font-size: 20px;
         position: fixed;
-        z-index: 2;
+        z-index: 3;
         width: 100%;
         top: 0;
     }
@@ -301,6 +301,38 @@
     .logo-burger{
         padding: 1%;
         width: 6rem;
+    }
+
+    .table-1, .table-2, .table-3{
+        width: 40px;
+        height: 40px;
+    }
+
+    .table-entrance{
+        width: 40px;
+        height: 200px;
+        top: 50px;
+    }
+
+    .room-layout{
+        font-size: 12px;
+    }
+
+    .chear-1, .chear-2, .chear-3{
+        width: 40%;
+    }
+
+    .c3-1{
+        top: 8%;
+    }
+    .c3-2{
+        top: 31%;
+    }
+    .c3-3{
+        top: 55%;
+    }
+    .c3-4{
+        top: 78%;
     }
 }
 
