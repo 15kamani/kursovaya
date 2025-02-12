@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.forEach((element, index) => {
         setTimeout(() => {
             element.classList.add("visible");
-        }, index * 700); // Задержка 700 мс между элементами
+        }, index * 600); // Задержка 700 мс между элементами
     });
 });
 
@@ -65,7 +65,7 @@ burgerMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
 });
 
-// Пример кастомного JavaScript для меню
+// JavaScript для меню
 document.addEventListener("DOMContentLoaded", function () {
     const navbarToggler = document.querySelector(".navbar-toggler");
     const navbarCollapse = document.querySelector(".navbar-collapse");
