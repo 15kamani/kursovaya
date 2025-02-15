@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Кофе с СоВой</title>
+</head>
+<body>
+    <header>
+        <div class="top-menu">
+            <div class="media-icon">
+                <a href="https://vk.com/coffeessovoy35"><img src="img/icon/vk.png" alt="Вконтакте"></a>
+                <a href="https://wa.me/79115128112"><img src="img/icon/instagram.png" alt="Ватсап"></a>
+                <a href="https://www.instagram.coffeessovoy35"><img src="img/icon/whatsapp.png" alt="Инстаграм"></a>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="img/header/logo.jpg" alt="Логотип кофейни 'Кофе с СоВой'"></a>
+            </div>
+            <div class="contact-menu">
+                <div class="contact-tools">
+                    <div class="contact-tool">
+                        <img src="img/header/location.png" alt="Город, где находится чудестная кофейня">
+                        <a>Вытегра</a>
+                    </div>
+                    <div class="contact-tool">
+                        <div class="text-to-copy" onclick="copyText(this)"><img src="img/header/phone.png"
+                                alt="Номер телефона для связи">+7 (911) 512-81-12</div>
+                    </div>
+                </div>
+                <div class="btn-order">
+                    <div class="button-container">
+                        <button class="hover-button" data-bs-target="#LoginModal" data-bs-toggle="modal">Выход</button>
+                        <div class="owl-tooltip">🦉</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttom-menu" style="margin-top: -3%;">
+            <nav class="navbar navbar-expand-lg bg-f7eabd">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Меню
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="page/menu.html#novinki">Новинки</a>
+                                <a class="dropdown-item" href="page/menu.html#drinks">Напитки</a>
+                                <a class="dropdown-item" href="page/menu.html#bistro">Бистро/Пекарня</a>
+                                <a class="dropdown-item" href="page/menu.html#presents">Подарочные наборы</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page/delivery.html#deliver">Доставка</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Бронирование
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking1">
+                                <a class="dropdown-item" href="page/booking.html">Забронировать столик</a>
+                                <a class="dropdown-item" href="page/booking.html#hall_reservation">Заказать зал</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="page/news.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page/galery.html">Галерея</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                О Нас
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking2">
+                                <a class="dropdown-item" href="page/about-us.html">Кто мы?</a>
+                                <a class="dropdown-item" href="page/about-us.html#contact">Контакты</a>
+                                <a class="dropdown-item" href="page/about-us.html#impotant">Создатели</a>
+                                <a class="dropdown-item" href="page/about-us.html#retwit">Отзывы</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+<!-- Навигационное меню с бургером -->
+<nav class="navbar navbar-expand-lg navbar-light bg-f7eabd" id="none-display">
+    <div class="container-fluid">
+        <!-- Логотип -->
+        <img src="img/header/logo.jpg" alt="Логотип" class="logo-burger">
+
+        <!-- Кнопка "Войти" -->
+        <div class="btn-order">
+            <div class="button-container">
+                <button class="hover-button" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</button>
+                <div class="owl-tooltip">🦉</div>
+            </div>
+        </div>
+
+        <!-- Кнопка бургера -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Меню -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="page/menu.html" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Меню
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="page/menu.html#novinki1">Новинки</a>
+                        <a class="dropdown-item" href="page/menu.html#drinks1">Напитки</a>
+                        <a class="dropdown-item" href="page/menu.html#bistro1">Бистро/Пекарня</a>
+                        <a class="dropdown-item" href="page/menu.html#presents1">Подарочные наборы</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page/delivery.html#deliver">Доставка</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="page/booking.html" id="navbarDropdownBooking"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Бронирование
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
+                        <a class="dropdown-item" href="page/booking.html">Забронировать столик</a>
+                        <a class="dropdown-item" href="page/booking.html#hall_reservation">Заказать зал</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="page/news.html">Новости</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page/galery.html">Галерея</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="page/about-us.html" id="navbarDropdownAbout"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        О Нас
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                        <a class="dropdown-item" href="page/about-us.html">Кто мы?</a>
+                        <a class="dropdown-item" href="page/about-us.html#contact">Контакты</a>
+                        <a class="dropdown-item" href="page/about-us.html#impotant">Создатели</a>
+                        <a class="dropdown-item" href="page/about-us.html#retwit">Отзывы</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    </header>
+                <!-- Модальное окно выхода -->
+                <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    <h2 class="garmond-1">Выход</h2>
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="div-form">
+                                    <p>Вы уверены, что хотите выйти из аккаунта ?</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-custom" href="index.html">Выйти</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <main>
+        <div class="admin-panel">
+            <h1 class="my-4">Панель администратора</h1>
+            
+            <div class="dobavlenie">
+                <!-- Раздел "Новинки" -->
+                <section class="mb-5">
+                    <h2>Новинки</h2>
+                    <div id="novelties-list" class="row"></div>
+                    <button class="btn btn-custom" onclick="openModal('novelty')">Добавить новинку</button>
+                </section>
+        
+                <!-- Раздел "Меню" -->
+                <section class="mb-5">
+                    <h2>Меню</h2>
+                    <div id="menu-list" class="row"></div>
+                    <button class="btn btn-custom" onclick="openModal('menu')">Добавить в меню</button>
+                </section>
+        
+                <!-- Раздел "Новости" -->
+                <section class="mb-5">
+                    <h2>Новости</h2>
+                    <div id="news-list" class="row"></div>
+                    <button class="btn btn-custom" onclick="openModal('news')">Добавить новость</button>
+                </section>
+            </div>
+            
+            <div class="zakaz">
+                <!-- Раздел "Забронированные заказы" -->
+                <section class="mb-5">
+                    <h2>Забронированные заказы</h2>
+                    <div id="orders-list" class="row"></div>
+                </section>                
+            </div>
+        </div>
+    
+        <!-- Модальные окна для добавления информации -->
+        <div id="modal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Добавить</h5>
+                        <button type="button" class="btn-close" onclick="closeModal()"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="modal-form">
+                            <div id="novelty-form" class="form-section">
+                                <input type="text" class="form-control mb-3" placeholder="Название" required>
+                                <input type="text" class="form-control mb-3" placeholder="Описание" required>
+                                <input type="file" class="form-control mb-3" accept="image/*" required>
+                            </div>
+                            <div id="menu-form" class="form-section">
+                                <input type="text" class="form-control mb-3" placeholder="Название" required>
+                                <select class="form-control mb-3" required>
+                                    <option value="">Выберите категорию</option>
+                                    <option value="category1">Новинки</option>
+                                    <option value="category2">Кофе</option>
+                                    <option value="category3">Чай</option>
+                                    <option value="category4">Бистро/Пекарня</option>
+                                    <option value="category5">Подарочные наборы</option>
+                                </select>
+                                <input type="number" class="form-control mb-3" placeholder="Цена" required>
+                                <input type="file" class="form-control mb-3" accept="image/*" required>
+                            </div>
+                            <div id="news-form" class="form-section">
+                                <input type="text" class="form-control mb-3" placeholder="Краткое название" required>
+                                <input type="text" class="form-control mb-3" placeholder="Краткое описание" required>
+                                <textarea class="form-control mb-3" placeholder="Полное описание" required></textarea>
+                                <input type="file" class="form-control mb-3" accept="image/*" required>
+                            </div>
+                            <button type="submit" class="btn btn-custom">Сохранить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="menu-footer">
+            <li class="step-menu">
+                <a href="#">Главная</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/menu.html">Меню</a>
+                <a href="page/menu.html#novinki" id="a-side">Новинки</a>
+                <a href="page/menu.html#drinks" id="a-side">Напитки</a>
+                <a href="page/menu.html#bistro" id="a-side">Бистро/Пекарня</a>
+                <a href="page/menu.html#presents" id="a-side">Подарочные наборы</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/delivery.html#deliver">Доставка</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/booking.html">Бронирование</a>
+                <a href="page/booking.html" id="a-side">Забронировать столик</a>
+                <a href="page/booking.html#hall_reservation" id="a-side">Заказать зал</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/news.html">Новости</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/galery.html">Галерея</a>
+            </li>
+            <li class="step-menu">
+                <a href="page/about-us.html">О Нас</a>
+                <a href="page/about-us.html" id="a-side">Кто мы?</a>
+                <a href="page/about-us.html#contact" id="a-side">Контакты</a>
+                <a href="page/about-us.html#retwit" id="a-side">Отзывы</a>
+            </li>
+        </ul>
+        <div class="image-links">
+            <a href="https://vk.com/coffeessovoy35" target="_blank">
+                <img src="img/icon/vk.png" alt="Вконтакте">
+            </a>
+            <a href="https://www.instagram.coffeessovoy35" target="_blank">
+                <img src="img/icon/instagram.png" alt="Инстаграм">
+            </a>
+            <a href="#" target="_blank">
+                <img src="img/icon/whatsapp.png" alt="Ватсап">
+            </a>
+        </div>
+        <div class="logotip-footer">
+            <a href="#"><img src="img/header/logo.jpg" alt=""></a>
+        </div>
+        <div class="kapcha">
+            <span>Все права пренадлежать "Кофе с СоВой" | Каманина Алина ИСП-421р | @sun_rise3001</span>
+            <span id="years-develop">2024-2025</span>
+        </div>
+    </footer>
+    <button id="scrollToTop" aria-label="Наверх">
+        &#8593; <!-- Стрелочка вверх -->
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let currentForm = '';
+        let novelties = [];
+        let menuItems = [];
+        let newsItems = [];
+        let orders = [
+            { user: 'user1', order: 'Заказ 1' },
+            { user: 'user2', order: 'Заказ 2' }
+        ];
+
+        function openModal(formType) {
+            currentForm = formType;
+            document.querySelectorAll('.form-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(`${formType}-form`).style.display = 'block';
+            new bootstrap.Modal(document.getElementById('modal')).show();
+        }
+
+        function closeModal() {
+            bootstrap.Modal.getInstance(document.getElementById('modal')).hide();
+            document.getElementById('modal-form').reset();
+        }
+
+        document.getElementById('modal-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            if (currentForm === 'novelty') {
+                addNovelty(data);
+            } else if (currentForm === 'menu') {
+                addMenuItem(data);
+            } else if (currentForm === 'news') {
+                addNews(data);
+            }
+
+            closeModal();
+        });
+
+        function addNovelty(data) {
+            const novelty = {
+                name: data['0'],
+                description: data['1'],
+                image: URL.createObjectURL(data['2'])
+            };
+            novelties.push(novelty);
+            displayCards(novelties, 'novelties-list', 'novelty');
+        }
+
+        function addMenuItem(data) {
+            const menuItem = {
+                name: data['0'],
+                category: data['1'],
+                price: data['2'],
+                image: URL.createObjectURL(data['3'])
+            };
+            menuItems.push(menuItem);
+            displayCards(menuItems, 'menu-list', 'menu');
+        }
+
+        function addNews(data) {
+            const newsItem = {
+                name: data['0'],
+                shortDescription: data['1'],
+                fullDescription: data['2'],
+                image: URL.createObjectURL(data['3'])
+            };
+            newsItems.push(newsItem);
+            displayCards(newsItems, 'news-list', 'news');
+        }
+
+        function displayCards(data, containerId, type) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = '';
+            data.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'col-md-4 mb-4';
+                card.innerHTML = `
+                    <div class="card">
+                        <img src="${item.image}" class="card-img-top" alt="${item.name}">
+                        <div class="card-body">
+                            <h5 class="card-title">${item.name}</h5>
+                            ${item.description ? `<p class="card-text">${item.description}</p>` : ''}
+                            ${item.category ? `<p class="card-text">Категория: ${item.category}</p>` : ''}
+                            ${item.price ? `<p class="card-text">Цена: ${item.price} руб.</p>` : ''}
+                            ${item.shortDescription ? `<p class="card-text">${item.shortDescription}</p>` : ''}
+                            ${item.fullDescription ? `<p class="card-text">${item.fullDescription}</p>` : ''}
+                            <button class="btn btn-danger" onclick="deleteCard('${type}', ${index})">Удалить</button>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function deleteCard(type, index) {
+            if (type === 'novelty') {
+                novelties.splice(index, 1);
+                displayCards(novelties, 'novelties-list', 'novelty');
+            } else if (type === 'menu') {
+                menuItems.splice(index, 1);
+                displayCards(menuItems, 'menu-list', 'menu');
+            } else if (type === 'news') {
+                newsItems.splice(index, 1);
+                displayCards(newsItems, 'news-list', 'news');
+            }
+        }
+
+        function displayOrders() {
+            const ordersList = document.getElementById('orders-list');
+            ordersList.innerHTML = '';
+            orders.forEach((order, index) => {
+                const orderDiv = document.createElement('div');
+                orderDiv.className = 'col-md-4 mb-4';
+                orderDiv.innerHTML = `
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Пользователь: ${order.user}</h5>
+                            <p class="card-text">Заказ: ${order.order}</p>
+                            <button class="btn btn-danger" onclick="deleteOrder(${index})">Удалить</button>
+                        </div>
+                    </div>
+                `;
+                ordersList.appendChild(orderDiv);
+            });
+        }
+
+        function deleteOrder(index) {
+            orders.splice(index, 1);
+            displayOrders();
+        }
+
+        displayOrders();
+    </script>
+</body>
+</html>

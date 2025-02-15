@@ -270,3 +270,4 @@ showReview(currentReview);
                 overlay.style.display = 'none';
             }
         });
+
