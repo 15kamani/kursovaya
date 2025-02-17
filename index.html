@@ -21,7 +21,7 @@
     <title>Кофе с СоВой</title>
 </head>
 
-<body>
+<body class="container-0">
     <header>
         <div class="top-menu">
             <div class="media-icon hidden">
@@ -208,88 +208,87 @@
             </div>
         </div>
     </div>
-                    <!-- Модальное окно входа -->
+<!-- Модальное окно входа -->
 <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"><h2 class="garmond-1">Вход</h2></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form id="loginForm">
-                <div class="div-forms">
-                    <div class="div-form">
-                        <label for="loginUsername">Логин:</label>
-                        <input type="text" id="loginUsername" name="loginUsername" required>
-                    </div>
-                    <div class="div-form">
-                        <label for="loginPassword">Пароль:</label>
-                        <input type="password" id="loginPassword" name="loginPassword" required>
-                    </div>
-
-                    <label>
-                        <input type="checkbox" id="rememberMe"> Запомнить меня
-                    </label>
-                </div>
-                <button type="submit" class="btn-submit">Войти</a></button>
-            <p class="text-custom-1" style="margin-top: 3%;">Нет аккаунта? <a href="#" data-bs-target="#registerModal" data-bs-toggle="modal">Зарегистрироваться</a></p>
-        </form>
-        </div>
-      </div>
-    </div>
-  </div>
-        <!-- Модальное окно регистрации -->
-
-        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel"><h2 class="garmond-1">Регистрация</h2></h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="registerForm">
-                        <div class="div-forms">
-                            <div class="div-form">
-                                <label for="registerFullName">ФИО<span class="red">*</span>:</label>
-                                <input type="text" id="registerFullName" name="registerFullName" required>
-                            </div>
-                            <div class="div-form">
-                                <label for="registerUsername">Логин<span class="red">*</span>:</label>
-                                <input type="text" id="registerUsername" name="registerUsername" required>
-                            </div>
-                            <div class="div-form">
-                                <label for="registerPhone">Номер телефона<span class="red">*</span>:</label>
-                                <input type="tel" id="registerPhone" name="registerPhone" required>
-                            </div>
-                            <div class="div-form">
-                                <label for="registerEmail">Почта:</label>
-                                <input type="email" id="registerEmail" name="registerEmail" required>
-                            </div>
-                            <div class="div-form">
-                                <label for="registerPassword">Пароль<span class="red">*</span>:</label>
-                                <input type="password" id="registerPassword" name="registerPassword" required>
-                            </div>
-                            <div class="div-form">
-                                <label for="registerConfirmPassword">Подтверждение пароля<span class="red">*</span>:</label>
-                                <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" required>
-                            </div>
-                            <label>
-                                <input type="checkbox" id="agreeToTerms" required> Согласен на обработку персональных
-                                данных<span class="red">*</span>
-                            </label>
-                        </div>
-    
-                        <button type="submit" class="btn-submit">Зарегистрироваться</button>
-                        <p class="text-custom-1" style="margin-top: 3%;">Есть аккаунт? <a href="#" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</a></p>
-                        <span><span class="red">*</span> - поля, обязательные для заполнения</span>
-                        <a href="page/cart.html">Просмотр аккаунта</a>
-                    </form>
-                </div>
-              </div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><h2 class="garmond-1">Вход</h2></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-          </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="div-forms">
+                        <div class="div-form">
+                            <label for="loginUsername">Логин:</label>
+                            <input type="text" id="loginUsername" name="loginUsername" required>
+                        </div>
+                        <div class="div-form">
+                            <label for="loginPassword">Пароль:</label>
+                            <input type="password" id="loginPassword" name="loginPassword" required>
+                        </div>
+                        <label>
+                            <input type="checkbox" id="rememberMe"> Запомнить меня
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-submit">Войти</button>
+                    <p class="text-custom-1" style="margin-top: 3%;">Нет аккаунта? <a href="#" data-bs-target="#registerModal" data-bs-toggle="modal">Зарегистрироваться</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно регистрации -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><h2 class="garmond-1">Регистрация</h2></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="div-forms">
+                        <div class="div-form">
+                            <label for="registerFullName">ФИО<span class="red">*</span>:</label>
+                            <input type="text" id="registerFullName" name="registerFullName" required>
+                        </div>
+                        <div class="div-form">
+                            <label for="registerUsername">Логин<span class="red">*</span>:</label>
+                            <input type="text" id="registerUsername" name="registerUsername" required>
+                        </div>
+                        <div class="div-form">
+                            <label for="registerPhone">Номер телефона<span class="red">*</span>:</label>
+                            <input type="tel" id="registerPhone" name="registerPhone" required>
+                        </div>
+                        <div class="div-form">
+                            <label for="registerEmail">Почта:</label>
+                            <input type="email" id="registerEmail" name="registerEmail" required>
+                        </div>
+                        <div class="div-form">
+                            <label for="registerPassword">Пароль<span class="red">*</span>:</label>
+                            <input type="password" id="registerPassword" name="registerPassword" required>
+                        </div>
+                        <div class="div-form">
+                            <label for="registerConfirmPassword">Подтверждение пароля<span class="red">*</span>:</label>
+                            <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" required>
+                        </div>
+                        <label>
+                            <input type="checkbox" id="agreeToTerms" required> Согласен на обработку персональных данных<span class="red">*</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-submit">Зарегистрироваться</button>
+                    <p class="text-custom-1" style="margin-top: 3%;">Есть аккаунт? <a href="#" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</a></p>
+                    <span><span class="red">*</span> - поля, обязательные для заполнения</span>
+                    <a href="page/cart.html">Просмотр аккаунта</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
     <div id="tooltip" class="tooltip">Номер скопирован!</div>
     <main>
         <!-- Слайдер -->
