@@ -99,71 +99,77 @@
         </div>
         <!-- Навигационное меню с бургером -->
         <nav class="navbar navbar-expand-lg navbar-light bg-f7eabd" id="none-display">
-            <!-- Кнопка бургера -->
-            <img src="../img/header/logo.jpg" alt="Логотип" class="logo-burger" style="width: 7rem; padding: 1%; margin-left: 4%;">
-            <div class="btn-order">
-                <div class="button-container">
-                    <button class="hover-button" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</button>
-                    <div class="owl-tooltip">🦉</div>
+            <div class="container-fluid">
+                <!-- Логотип -->
+                <img src="../img/header/logo.jpg" alt="Логотип" class="logo-burger">
+
+                <!-- Кнопка "Войти" -->
+                <div class="btn-order">
+                    <div class="button-container">
+                        <button class="hover-button" data-bs-target="#LoginModal" data-bs-toggle="modal">Войти</button>
+                        <div class="owl-tooltip">🦉</div>
+                    </div>
+                </div>
+
+                <!-- Кнопка бургера -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Меню -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="menu.html" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Меню
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="menu.html#novinki1">Новинки</a>
+                                <a class="dropdown-item" href="menu.html#drinks1">Напитки</a>
+                                <a class="dropdown-item" href="menu.html#bistro1">Бистро/Пекарня</a>
+                                <a class="dropdown-item" href="menu.html#presents1">Подарочные наборы</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="delivery.html#deliver">Доставка</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="booking.html" id="navbarDropdownBooking"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Бронирование
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
+                                <a class="dropdown-item" href="booking.html">Забронировать столик</a>
+                                <a class="dropdown-item" href="booking.html#hall_reservation">Заказать зал</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="news.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galery.html">Галерея</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about-us.html" id="navbarDropdownAbout"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                О Нас
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                                <a class="dropdown-item" href="about-us.html">Кто мы?</a>
+                                <a class="dropdown-item" href="about-us.html#contact">Контакты</a>
+                                <a class="dropdown-item" href="about-us.html#impotant">Создатели</a>
+                                <a class="dropdown-item" href="about-us.html#retwit">Отзывы</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Меню -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Главная</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Меню
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="menu.html#novinki">Новинки</a>
-                            <a class="dropdown-item" href="menu.html#drinks1">Напитки</a>
-                            <a class="dropdown-item" href="menu.html#bistro1">Бистро/Пекарня</a>
-                            <a class="dropdown-item" href="menu.html#presents1">Подарочные наборы</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="delivery.html#deliver">Доставка</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Бронирование
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
-                            <a class="dropdown-item" href="booking.html">Забронировать столик</a>
-                            <a class="dropdown-item" href="booking.html#hall_reservation">Заказать зал</a>
-                        </div>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="news.html">Новости</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galery.html">Галерея</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBooking" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            О Нас
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownBooking">
-                            <a class="dropdown-item" href="about-us.html">Кто мы?</a>
-                            <a class="dropdown-item" href="about-us.html#contact">Контакты</a>
-                            <a class="dropdown-item" href="about-us.html#impotant">Создатели</a>
-                            <a class="dropdown-item" href="about-us.html#retwit">Отзывы</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
         </nav>
-        </div>
 
             <!-- Модальное окно входа -->
     <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
